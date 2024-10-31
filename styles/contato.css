@@ -1,0 +1,79 @@
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+}
+
+.contato{
+    margin: 2em 2em;
+}
+
+.contato__titulo{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.contato__texto{
+    font-weight: 200;
+    color: var(--azul);
+    margin-bottom: 1em;
+}
+
+.contato__email{
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    color: var(--azul);
+    padding: 0.75em;
+    width: 90%;
+}
+
+.contato__email::placeholder{
+    color: var(--azul); 
+    background: url(../img/mail_black_24dp\ 1.svg) no-repeat;
+    background-position: 1em;
+    font-weight: 400;
+    padding-left: 3.5em;
+}
+
+.rodapé__titulo{
+    padding: 1em 0 2em 2em;
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+}
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato__descrição{
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email{
+        width: 30%;
+        margin-left: 1em;
+    }
+
+    .contato__titulo{
+        font-size: 24px;
+    }
+
+    .contato__texto{
+        width: 120%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        padding: 3em 10vh;
+    }
+}
